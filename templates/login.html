@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Login Form</h1>
+    
+    {{if .ErrorMessage}}
+    <div class="error">{{.ErrorMessage}}</div>
+    {{end}}
+
+    <form action="/" method="post">
+        <label for="email">Email address</label>
+        <input type="text" id="email" name="email">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>List of available emails:</h2>
+    <ul>
+        {{range .AvailableEmails}}
+        <li>{{.}}</li>
+        {{end}}
+    </ul>
+</body>
+</html>

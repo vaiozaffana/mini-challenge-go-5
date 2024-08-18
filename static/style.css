@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+label, input, button {
+    margin: 5px 0;
+}
+
+button {
+    width: 25%;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout {
+    background-color: red;
+    color: #f4f4f4;
+}
+
+.back {
+    background-color: gray;
+    color:#f4f4f4;
+}
+
+.error {
+    width: 25%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
